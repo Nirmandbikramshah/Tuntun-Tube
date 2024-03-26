@@ -1,0 +1,333 @@
+.Header{
+    display: flex;
+    height: 60px;
+    margin-top: 0;
+    justify-content: space-between;
+    margin-top: -8px;
+    position: fixed;
+    z-index: 1000;
+   width: 100%;
+   background-color: white;
+   top: 5px;
+   left: 0;
+   right: 0;
+   padding-bottom: 48px;
+   }
+    .Header-Left-Section{
+      width: 230px;
+      display: flex;
+      align-items: center;
+      margin-top: 3px;
+      margin-left: 16px;
+      
+    }
+    .Youtube-Logo{
+      height: 40px;
+      margin-bottom: 7px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    .Hamberger{
+      height: 25px;
+      margin-top: 2px;
+      margin-right: 7px;
+      cursor: pointer;
+    }
+    .Middle-Section{
+      flex: 1;
+      max-width: 550px;
+      display: flex;
+      align-items: center;
+      margin-top: 4px;
+      margin-left: -100px;
+    }
+    .Search-Bar{
+      height: 35px;
+      margin-top: -3px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(204, 204, 204);
+      flex: 1;
+      max-width: 500px;
+      min-width: 100px;
+      font-size: 15px;
+      font-weight: 500;
+     padding-left: 15px;
+     width: 0;
+     flex: 1;
+    outline: none;
+    z-index: 1000;
+    }
+    .Search-Bar:focus{
+      border:1px solid #3f51b5;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,.3);
+    }
+    .Microphone{
+      background-color: rgb(242, 242, 242);
+      width: 35px;
+      border-radius: 20px;
+      border:none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 12px;
+      position: relative;
+     
+    }
+    .Microphone .tooltip{
+      position: absolute;        
+        bottom: 3px; 
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background-color: rgba(111, 111, 111,0.8);
+        color: white;
+        font-size: 12px;
+        border-radius: 5px;
+        left: 40px;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.15s;
+        white-space:nowrap;
+    }
+    .Microphone:hover .tooltip{
+      opacity: 1;
+    }
+    .Microphone:active{
+      background-color: rgb(195, 195, 195);
+    }
+    .Microphone:hover{
+      background-color: rgb(217, 217, 217);
+    }
+    .Micro-ok{
+      height: 25px;
+      width: 25px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-left:4px ;
+      padding-right: 4px;
+      cursor: pointer;
+    }
+    .Header-Right-Section{
+      width: 150px;
+      margin-right: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   
+    }
+
+      .Search-Icon{
+        width: 40px;
+        height: 38px;
+        border-color: rgb(204, 204, 204);
+        border-width: 1px;
+        border-style: solid;
+        margin-top: -3px;
+        margin-left: -1px;
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-top: 4px;
+        padding-bottom: 2px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 60px;
+        background-color: rgb(248, 248, 248);
+        cursor: pointer;
+        position: relative;
+      }
+      .Search-Icon:hover{
+        background-color: rgb(240, 240, 240);
+
+      }
+      .Search-button{
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+      .Search-Icon .tooltip{
+        position: absolute;        
+        top: 4px; 
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background-color: rgba(111, 111, 111,0.8);
+        color: white;
+        font-size: 12px; 
+        border-radius: 5px;
+        left: 70px;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.15s;
+        z-index: 10;
+      }
+      .Search-Icon:hover .tooltip{
+        opacity: 1;
+      }
+      .Upload-Ho{
+        position: relative;
+      }
+      .Upload-Ho .tooltip{
+       
+        position: absolute;        
+        top: 0px; 
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background-color: rgba(111, 111, 111,0.8);
+        color: white;
+        font-size: 12px; 
+        border-radius: 5px;
+        right: 30px;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.15s;
+        z-index: 10;
+      }
+    .Upload-Ho:hover .tooltip{
+      opacity: 1;
+    }
+    .Notiti .tooltip{
+      position: absolute;        
+        top: 0px; 
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background-color: rgba(111, 111, 111,0.8);
+        color: white;
+        font-size: 12px; 
+        border-radius: 5px;
+        right: 30px;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.15s;
+        z-index: 10;
+    }
+    .Notiti:hover .tooltip{
+     opacity: 1;
+    }
+      .Notications-Header{
+        width: 28px;
+        margin-top: 4px;
+        cursor: pointer;
+      }
+      .Upload-Header{
+        width: 28px;
+        cursor: pointer;
+      }
+      .Cocomelon{
+        width: 40px;
+        border-radius: 16px;
+        cursor: pointer;
+      }
+      .Recommendation{
+        margin-left: 85px;
+        padding-bottom: 10px;
+        overflow: auto;
+        white-space: nowrap;
+        max-width: 1100px;
+        position: fixed;
+        z-index: 1000;
+        top: 57px;
+        padding-top: 8px;
+        display: flex;
+      }
+      .Recommendation::-webkit-scrollbar {
+        display: none;
+      }
+      .Recom{
+        background-color: rgb(238, 238, 238);
+        border-radius: 6px;
+        border:none;
+        font-weight:500;
+        font-size: 15px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 12px;
+        padding-right: 12px;
+        font-family:Roboto,Arial;
+        font-weight: 500;
+        margin-right: 8px;
+        cursor: pointer;
+      }
+      .Recom:hover{
+        background-color: rgb(229, 229, 229);
+      }
+  
+
+         
+      .First-Recom{
+        background-color: black;
+        color: rgb(229, 229, 229);
+      }
+      .First-Recom:hover{
+        background-color: black;
+        color: rgb(229, 229, 229);
+      }
+
+            .icon-2{
+              right: 0px;
+              background: linear-gradient(-90deg, #fff 70%, transparent);
+              z-index: 10000;
+             width: 60px;
+             height: 35px;
+             justify-content: flex-end;
+            }
+            .Gradient{
+              justify-self: end;
+              z-index: 100;
+             right: 0px;
+             top: 0;
+             bottom: 0;
+              position: sticky;
+              height: 28px;
+              margin-left: 10px;
+            }
+            .Arrow-idk{
+              position: sticky;
+              justify-self: end;
+              z-index: 10000;
+             right: 0px;
+             top: 0;
+             bottom: 0;
+             align-items: center;
+             padding-top: 0px;
+             font-size: 20px;
+             padding-left: 2px;
+             padding-right: 2px;
+             border-radius: 50px;
+             cursor: pointer;
+        
+            }
+            .Arrow-idk:hover{
+              background-color: rgb(229, 229, 229);
+            }
+            .Arrow-Head{
+          width: 25px;
+          color: black;
+          height: 25px;
+          object-fit: cover;
+          object-position: center;
+            }
+            .Notiti{
+                position: relative;
+               }
+               .Notifi{
+                position: absolute;
+                top:1px;
+                right: -8px;
+                background-color: rgb(204, 0, 0);
+                border-radius: 8px;
+                color: white;
+                font-size: 13px;
+                padding-left: 2px;
+                padding-right: 2px;
+               }
+     
+    
